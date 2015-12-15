@@ -38,9 +38,9 @@ public class Responder
     {
         responseMap = new HashMap<String, String>();
         defaultResponses = new ArrayList<String>();
-        fillResponseMap();
+        //fillResponseMap();
         fillResponsMapSapces();
-        //fillDefaultResponses();
+        fillDefaultResponses();
         randomGenerator = new Random();
     }
 
@@ -142,12 +142,7 @@ public class Responder
             System.err.println("A problem was encountered reading " +
                                FILE_OF_SPACED_RESPONSES);
         }
-        // Make sure we have at least one response.
-       /** if(responseMap.size() == 0) {
-           // defaultResponses.add("Could you elaborate on that?");
-           responseMap.toString();
-        }
-        **/
+        
     }
 
     /**
